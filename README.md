@@ -3,15 +3,19 @@
 ### Smithsonian's National Zoo and Conservation Biology Institute
 
 Script to demultiplex reads from Illumina undetermined reads file. Input is an Illumina undetermined reads file (must include the observed index combination in the sequence headers) and optionally a two-column headerless CSV listing the sample name in the first column and the index combination in the second, e.g.:  
-samp1,ATGCTGTA+TTTCAACG
-samp2,GGAACCTT+AATTCCGG
-...
-sampX,TGCATGCA+CGTACGTA
+
+samp1,ATGCTGTA+TTTCAACG  
+samp2,GGAACCTT+AATTCCGG  
+...   
+sampX,TGCATGCA+CGTACGTA  
 
 If no barcode file is given, the script will demultiplex by every observed barcode.  
 
 ### License  
 The software is made available under the Smithsonian Institution [terms of use](https://www.si.edu/termsofuse).  
+
+### Citation  
+Campana, M.G. 2021. demultiplex v. 0.0.1. Available: https://github.com/campanam/demultiplex.  
 
 ### Installation  
 This script requires [Ruby](www.ruby-lang.org) and the [congenlib](https://github.com/campanam/congenlib) library. Then download the `demultiplex.rb` script from this repository and place in a convenient location. You can make this program executable by running `chmod +x demultiplex.rb` and putting it in a location within your PATH.  
