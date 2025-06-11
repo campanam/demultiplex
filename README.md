@@ -35,5 +35,5 @@ Options:
 ### Notes:  
 1. Demultiplexing without a barcode file produces an enormous number of tiny files. I recommend running the script until the correct barcodes are made obvious by their file size and then cancelling and rerunning with a barcode CSV.
 2. The Ruby zlib library is not compatible with all compression settings. If the script immediately stops with a tiny result, run the following command to uncompress and recompress the Undetermined reads:
-`gunzip -c <input reads> | gzip > <rezipped reads.gz>
+`gunzip -c <input reads> | gzip > <rezipped reads.gz>`  
 
