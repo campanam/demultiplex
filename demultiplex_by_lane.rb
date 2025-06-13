@@ -55,8 +55,6 @@ class Parser
 			opts.on("-z", "--gzip", "Gzip output sequence files") do
 				args.gzip = true
 			end
-			# Ideas for additional options:
-			# --top X: count the number of instances of barcode and return top X barcodes
 			opts.on_tail("-h", "--help", "Show help") do
 				puts opts
 				exit
