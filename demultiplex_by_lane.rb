@@ -86,7 +86,6 @@ end
 #----------------------------------------------------------------------------------------- 
 def output_barcodes # Method to output top X barcodes
 	puts "Barcode\tCount"
-	print $filehash.sort_by { |key,value| value}
 	for key in $filehash.keys
 		puts key + "\t" + $filehash[key].to_s
 	end
@@ -174,7 +173,7 @@ unless $options.barcodes.nil? # Read in known barcodes
 			end
 		end
 	end
-	$filehash['Other'] = '' # Entry for barcodes that don't match known indexes
+	$options.top.nil? ? $filehash['Other'] = '' : $filehash['Other'] = 0 # Entry for barcodes that don't match known indexes
 	$samplehash['Other'] = '' # Dummy other sample output
 end
 	
