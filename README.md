@@ -41,7 +41,7 @@ Options:
 By default, reads matching known barcodes will be output in a FASTQ file named "<sample_name>\_<barcode_combo>\_<input_file_name>.fq". Unknown barcodes will be placed in an "Other_<input_file_name>.fq" file. If the `--switch` option is used, reads will be output as "<sample_name>\_<barcode_combo>\_<input_file_name>.fq" for non-switched indexes and "<sample_name>\_S\_<barcode_combo>\_<input_file_name>.fq" for switched indexes.  If the `--RC` option is used, reads with known barcodes will be output as "<sample_name>\_<directional_prefix>\_<barcode_combo>\_<input_file_name>.fq" (F for forward, R for reverse-complemented). If the `--switch` option is used with the `--RC` option, reads will be output as "<sample_name>\_<directional_prefix>\_<barcode_combo>\_<input_file_name>.fq" for non-switched indexes and "<sample_name>\_<directional_prefix>S\_<barcode_combo>\_<input_file_name>.fq" for switched indexes.  
 
 ### Notes:  
-1. Demultiplexing without a barcode file produces an enormous number of tiny files. I recommend using the --max and --top barcodes to run a subset of reads and identify the most frequent combinations.  
+1. Demultiplexing without a barcode file produces an enormous number of tiny files. I recommend using the `--max` and `--top` options to run a subset of reads and identify the most frequent combinations.  
 2. The Ruby zlib library is not compatible with all compression settings. If the script immediately stops with a tiny result, run the following command to uncompress and recompress the Undetermined reads:
 `gunzip -c <input reads> | gzip > <rezipped reads.gz>`  
 
