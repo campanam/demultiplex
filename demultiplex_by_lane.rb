@@ -37,7 +37,7 @@ class Parser
 			opts.on("-R", "--RC", "Try reverse complement of barcode sequences") do |rc|
 				args.rc = true
 			end
-			opts.on("-S", "--switch", "Try reversing i5 and i7 barcode sequences") do |rc|
+			opts.on("-S", "--switch", "Try switching i5 and i7 barcode sequences") do |rc|
 				args.switch = true
 			end
 			opts.on("-H", "--hamming [VALUE]", Integer, "Maximum number of mismatches from known barcodes to assign read") do |hamming|
