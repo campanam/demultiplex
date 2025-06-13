@@ -28,7 +28,7 @@ Options:
 `-l`, `--lane [INTEGER]`: Specific lane number to demultiplex from an undetermined reads file (Optional, default is all lanes).  
 `-b`,`--barcodes [FILE]`: File listing samples with known barcode combinations (Optional, default is all observed index combinations).  
 `-R`, `--RC`: Try reverse complement of barcode sequences (Optional, default is only specified barcodes).  
-`-S`, `--switch`: Try reversing i5 and i7 barcode sequences (Optional, default is only specified barcodes).  
+`-S`, `--switch`: Try switching i5 and i7 barcode sequences (Optional, default is only specified barcodes).  
 `-H`, `--hamming [INTEGER]`: Maximum number of mismatches from known barcodes to assign read (Optional, default is 0).  
 `-u`, `--ignore`: Do not output file of unknown barcodes when using a barcode CSV (Optional, default is to output unknown barcodes).  
 `-m`, `--max [VALUE]`: Maximum number of sequences to demultiplex before quitting (Optional, default is output all reads).  
