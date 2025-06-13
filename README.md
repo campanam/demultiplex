@@ -32,7 +32,7 @@ Options:
 `-H`, `--hamming [INTEGER]`: Maximum number of mismatches from known barcodes to assign read (Optional, default is 0).  
 `-u`, `--ignore`: Do not output file of unknown barcodes when using a barcode CSV (Optional, default is to output unknown barcodes).  
 `-m`, `--max [VALUE]`: Maximum number of sequences to demultiplex before quitting (Optional, default is output all reads).  
-`-T, --TOP [VALUE]`: Count the number of instances of the most frequent barcodes (Optional, default is output demultiplexed reads).  
+`-T, --top [VALUE]`: Count the number of instances of the most frequent barcodes (Optional, default is output demultiplexed reads).  
 `-z`, `--gzip`: Gzip output sequence files (Optional, default is uncompressed).  
 `-h`, `--help`: Show help.  
 `-v`, `--version`: Show version.  

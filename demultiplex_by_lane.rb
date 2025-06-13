@@ -49,7 +49,7 @@ class Parser
 			opts.on("-m", "--max [VALUE]", Integer, "Maximum number of sequences to demultiplex before quitting") do |max|
 				args.max = max
 			end
-			opts.on("-T", "--TOP [VALUE]", Integer, "Count the number of instances of the most frequent barcodes") do |top|
+			opts.on("-T", "--top [VALUE]", Integer, "Count the number of instances of the most frequent barcodes") do |top|
 				args.top = top
 			end
 			opts.on("-z", "--gzip", "Gzip output sequence files") do
