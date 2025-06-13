@@ -1,4 +1,4 @@
-#/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 DEMBYLANEVER = '0.2.0'
 
