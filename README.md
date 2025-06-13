@@ -18,7 +18,7 @@ The software is made available under the Smithsonian Institution [terms of use](
 Campana, M.G. 2025. demultiplex_by_lane v. 0.2.0. Available: https://github.com/campanam/demultiplex.  
 
 ### Installation  
-This script requires [Ruby](www.ruby-lang.org) and the [congenlib](https://github.com/campanam/congenlib) library. Then download the `demultiplex.rb` script from this repository and place in a convenient location. You can make this program executable by running `chmod +x demultiplex.rb` and putting it in a location within your PATH.  
+This script requires [Ruby](www.ruby-lang.org) and the [congenlib](https://github.com/campanam/congenlib) v. >= 0.3.0 library. Then download the `demultiplex.rb` script from this repository and place in a convenient location. You can make this program executable by running `chmod +x demultiplex.rb` and putting it in a location within your PATH.  
 
 ### Usage:  
 `ruby demultiplex_by_lane.rb [options]`  
