@@ -85,9 +85,13 @@ def write_output # Method to write output in the filehash
 end
 #----------------------------------------------------------------------------------------- 
 def output_barcodes # Method to output top X barcodes
-	puts "Barcode\tCount"
-	for key in $filehash.keys
-		puts key + "\t" + $filehash[key].to_s
+	puts "KnownSample\tBarcode\tCount"
+	toparr = $filehash.sort_by { |key, value| value }
+	toparr.reverse!
+	$options.top = toparr.size if $options.top > toparr.size
+	for i in 0 ... $options.top
+		$options.barcodes.nil? ? sample = '' : sample = $samplehash[toparr[i][0]] # Add a sample if the sample name is known
+		puts sample + "\t" + toparr[i][0] + "\t" + toparr[i][1].to_s
 	end
 end
 #-----------------------------------------------------------------------------------------
